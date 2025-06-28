@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="KYDW Undergraduate Academic Team" />
-  <meta name="author" content="yixin0313" />
+  <meta name="description" content="Group 8 ICU Monitoring System" />
+  <meta name="author" content="Group 8 Team" />
 
-  <title>KYDW | Undergraduate Academic Team</title>
+  <title>Group 8 | ICU Monitoring System</title>
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
@@ -35,8 +35,8 @@
   <script>
     MathJax = {
       tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        inlineMath: [['$', '$'], ['\$', '\$']],
+        displayMath: [['$$', '$$'], ['\$$', '\$$']],
         tags: 'all',
       }
     };
@@ -48,7 +48,7 @@
   <!-- Navigation -->
   <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
     <div class="container px-5">
-      <a class="navbar-brand fw-bold" href="#page-top">KYDW</a>
+      <a class="navbar-brand fw-bold" href="#page-top">Group 8</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,11 +58,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0 text-uppercase fw-semibold">
           <li class="nav-item"><a class="nav-link me-lg-3" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link me-lg-3" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link me-lg-3" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link me-lg-3" href="#achievements">Achievements</a></li>
-          <li class="nav-item"><a class="nav-link me-lg-3" href="#news">News</a></li>
-          <li class="nav-item"><a class="nav-link me-lg-3" href="#join">Join Us</a></li>
+          <li class="nav-item"><a class="nav-link me-lg-3" href="#system">System</a></li>
+          <li class="nav-item"><a class="nav-link me-lg-3" href="#tech">Technology</a></li>
+          <li class="nav-item"><a class="nav-link me-lg-3" href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link me-lg-3" href="#future">Future</a></li>
           <li class="nav-item"><a class="nav-link me-lg-3" href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -71,94 +70,331 @@
   <!-- /Navigation -->
 
   <!-- Hero Banner -->
-  <header class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
+  <header class="top-section" style="background-image: url('static/assets/img/icu-bg.jpg');">
     <div class="top-section-content">
       <div class="container px-5">
-        <h1 class="text-white display-3 lh-1 font-alt">KYDW Undergraduate Academic Team</h1>
-        <!-- TODO: 可加入副标题 / 标语 -->
+        <h1 class="text-white display-3 lh-1 font-alt">IntelliCare ICU Monitor</h1>
+        <p class="text-white-50 lead">AI-powered critical care monitoring system</p>
       </div>
     </div>
   </header>
   <!-- /Hero Banner -->
 
-  <!-- Avatar -->
+  <!-- Logo -->
   <div class="container px-5 my-4 text-center">
-    <img class="shadow img-fluid" src="static/assets/img/kydw.png" alt="KYDW Logo" style="max-width: 220px;">
+    <img class="shadow img-fluid" src="static/assets/img/group8-logo.png" alt="Group 8 Logo" style="max-width: 220px;">
   </div>
-  <!-- /Avatar -->
+  <!-- /Logo -->
 
   <!-- Home Section -->
   <section id="home" class="bg-gradient-primary-to-secondary-light py-5">
     <div class="container px-5">
-      <h2 class="mb-4">Welcome</h2>
-      <div id="home-md">
-        <!-- TODO: 使用 Markdown 渲染团队简介，可留空 -->
+      <h2 class="mb-4">Revolutionizing ICU Monitoring</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+              <i class="bi bi-heart-pulse fs-1 text-danger mb-3"></i>
+              <h5>Multi-Parameter Monitoring</h5>
+              <p>Real-time tracking of 12+ vital signs including ECG, SpO2, and invasive pressures[3,5](@ref)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+              <i class="bi bi-shield-check fs-1 text-primary mb-3"></i>
+              <h5>Smart Alerts</h5>
+              <p>Adaptive thresholds for different patient types (e.g., cardiac vs. respiratory)[5](@ref)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+              <i class="bi bi-robot fs-1 text-success mb-3"></i>
+              <h5>AI Analytics</h5>
+              <p>Predictive algorithms for early sepsis detection and hemodynamic instability[1](@ref)</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-5">
+  <!-- System Section -->
+  <section id="system" class="py-5">
     <div class="container px-5">
-      <h2 class="mb-4">About Us</h2>
-      <!-- TODO: 填写团队成立背景、研究方向、导师等 -->
+      <h2 class="mb-4">System Features</h2>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="card border-0 shadow-sm mb-4">
+            <img src="static/assets/img/system-interface.jpg" class="card-img-top" alt="System Interface">
+            <div class="card-body">
+              <h5>Clinical Workflow Integration</h5>
+              <ul>
+                <li>BS architecture with Vue.js frontend and SpringBoot backend[2](@ref)</li>
+                <li>Unified data bus for device integration (HL7/JSON outputs)[1](@ref)</li>
+                <li>Electronic medical record (EMR) Level 6 certification support[1](@ref)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <h5>Core Monitoring Capabilities</h5>
+              <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Parameter</th>
+                      <th>Range</th>
+                      <th>Clinical Significance</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Heart Rate</td>
+                      <td>30-250 bpm</td>
+                      <td>Detects arrhythmias and perfusion status[5](@ref)</td>
+                    </tr>
+                    <tr>
+                      <td>SpO2</td>
+                      <td>70-100%</td>
+                      <td>Adjustable thresholds for COPD patients[5](@ref)</td>
+                    </tr>
+                    <tr>
+                      <td>Invasive BP</td>
+                      <td>0-300 mmHg</td>
+                      <td>Continuous arterial pressure monitoring[3](@ref)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="alert alert-info mt-3">
+                <i class="bi bi-info-circle-fill me-2"></i> Supports <strong>data correction</strong> with audit trails for artifact removal[3](@ref)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="bg-light py-5">
+  <!-- Technology Section -->
+  <section id="tech" class="bg-light py-5">
     <div class="container px-5">
-      <h2 class="mb-4">Projects</h2>
-      <!-- TODO: 每个项目可用 card / grid 展示，加入占位即可 -->
+      <h2 class="mb-4">Technical Architecture</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <h5><i class="bi bi-layers-half me-2 text-primary"></i>System Layers</h5>
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item border-0">
+                  <strong>Presentation Layer:</strong> Vue.js with ElementUI components[2](@ref)
+                </li>
+                <li class="list-group-item border-0">
+                  <strong>Middleware:</strong> Nginx reverse proxy with load balancing[2](@ref)
+                </li>
+                <li class="list-group-item border-0">
+                  <strong>Service Layer:</strong> SpringBoot microservices[2](@ref)
+                </li>
+                <li class="list-group-item border-0">
+                  <strong>Data Layer:</strong> Oracle+Redis hybrid database[2](@ref)
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <h5><i class="bi bi-patch-check me-2 text-success"></i>Key Innovations</h5>
+              <div class="d-flex mb-3">
+                <i class="bi bi-arrow-repeat fs-4 text-success me-3"></i>
+                <div>
+                  <h6>Dynamic Data Pipeline</h6>
+                  <p class="small mb-0">Real-time processing of 50+ physiological parameters[3](@ref)</p>
+                </div>
+              </div>
+              <div class="d-flex mb-3">
+                <i class="bi bi-clipboard2-pulse fs-4 text-primary me-3"></i>
+                <div>
+                  <h6>Smart Documentation</h6>
+                  <p class="small mb-0">Automated nursing records with time-axis visualization[1](@ref)</p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <i class="bi bi-broadcast fs-4 text-warning me-3"></i>
+                <div>
+                  <h6>Tele-ICU Support</h6>
+                  <p class="small mb-0">Integrated video consultation modules[4](@ref)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Achievements Section -->
-  <section id="achievements" class="py-5">
+  <!-- Team Section -->
+  <section id="team" class="py-5">
     <div class="container px-5">
-      <h2 class="mb-4">Achievements</h2>
-      <!-- TODO: 论文 / 竞赛 / 开源成果 列表 -->
+      <h2 class="mb-4">Our Team</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card border-0 shadow-sm h-100">
+            <img src="static/assets/img/team1.jpg" class="card-img-top rounded-circle mx-auto mt-4" style="width:150px" alt="Team Member">
+            <div class="card-body text-center">
+              <h5 class="card-title">Dr. Zhang</h5>
+              <p class="text-muted">Medical Advisor</p>
+              <p class="card-text">ICU specialist with 15+ years clinical experience</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 shadow-sm h-100">
+            <img src="static/assets/img/team2.jpg" class="card-img-top rounded-circle mx-auto mt-4" style="width:150px" alt="Team Member">
+            <div class="card-body text-center">
+              <h5 class="card-title">Prof. Li</h5>
+              <p class="text-muted">Technical Lead</p>
+              <p class="card-text">Biomedical signal processing expert</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 shadow-sm h-100">
+            <img src="static/assets/img/team3.jpg" class="card-img-top rounded-circle mx-auto mt-4" style="width:150px" alt="Team Member">
+            <div class="card-body text-center">
+              <h5 class="card-title">Wang Ming</h5>
+              <p class="text-muted">AI Engineer</p>
+              <p class="card-text">Developed predictive algorithms for sepsis</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- News Section -->
-  <section id="news" class="bg-light py-5">
+  <!-- Future Section -->
+  <section id="future" class="bg-light py-5">
     <div class="container px-5">
-      <h2 class="mb-4">News</h2>
-      <!-- TODO: 团队动态占位 -->
-    </div>
-  </section>
-
-  <!-- Join Us Section -->
-  <section id="join" class="py-5">
-    <div class="container px-5">
-      <h2 class="mb-4">Join Us</h2>
-      <!-- TODO: 招新要求、流程、报名链接（二维码） -->
+      <h2 class="mb-4">Roadmap</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="d-flex mb-4">
+            <div class="flex-shrink-0">
+              <span class="badge bg-primary rounded-pill p-2 me-3">2025 Q3</span>
+            </div>
+            <div>
+              <h5>Edge Computing</h5>
+              <p>Local AI models for low-latency analysis[1](@ref)</p>
+            </div>
+          </div>
+          <div class="d-flex mb-4">
+            <div class="flex-shrink-0">
+              <span class="badge bg-success rounded-pill p-2 me-3">2026 Q1</span>
+            </div>
+            <div>
+              <h5>Multi-center Cloud</h5>
+              <p>Cross-hospital data sharing platform[4](@ref)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card border-primary shadow">
+            <div class="card-header bg-primary text-white">
+              <i class="bi bi-lightbulb-fill me-2"></i>Innovation Pipeline
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Wearable ICU sensors (patent pending)</li>
+                <li class="list-group-item">Blockchain-based audit trails</li>
+                <li class="list-group-item">AR-assisted central line placement</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="bg-light py-5">
+  <section id="contact" class="py-5">
     <div class="container px-5">
-      <h2 class="mb-4">Contact</h2>
-      <!-- TODO: 邮箱、社交媒体、表单等 -->
+      <h2 class="mb-4">Get In Touch</h2>
+      <div class="row gx-5 align-items-center">
+        <div class="col-lg-6">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-4">
+                <div class="feature bg-primary bg-gradient text-white rounded-3 me-3 p-2">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <h5 class="mb-0">Email Us</h5>
+              </div>
+              <p class="mb-4">contact@group8-icu.com</p>
+              
+              <div class="d-flex align-items-center mb-4">
+                <div class="feature bg-primary bg-gradient text-white rounded-3 me-3 p-2">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <h5 class="mb-0">Visit Lab</h5>
+              </div>
+              <p class="mb-4">Biomedical Engineering Building, Room 408</p>
+              
+              <div class="d-flex">
+                <a class="btn btn-primary btn-lg rounded-pill me-2" href="#!">
+                  <i class="bi bi-twitter me-1"></i> Twitter
+                </a>
+                <a class="btn btn-primary btn-lg rounded-pill" href="#!">
+                  <i class="bi bi-linkedin me-1"></i> LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-4 mt-lg-0">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body p-4">
+              <h5 class="card-title mb-4">Request Demo</h5>
+              <form>
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" placeholder="Email Address">
+                </div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Hospital/Institution">
+                </div>
+                <div class="d-grid">
+                  <button class="btn btn-primary btn-lg rounded-pill" type="submit">Submit Request</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="bg-bottom text-center py-4">
     <div class="container px-5">
-      <p class="text-white-50 small mb-1" id="copyright-text">© <!-- TODO: Year --> KYDW</p>
-      <a id="github-link" href="https://github.com/senli1073" class="text-white-50">GitHub</a>
+      <p class="text-white-50 small mb-1">© 2025 Group 8 ICU Monitoring System</p>
+      <a href="https://github.com/group8-icu" class="text-white-50">GitHub</a>
       <span class="text-white-50 mx-1">&middot;</span>
-      <a id="license-link" href="https://github.com/senli1073/senli1073.github.io/blob/main/LICENSE" class="text-white-50">License</a>
+      <a href="#" class="text-white-50">Privacy Policy</a>
     </div>
   </footer>
   <!-- /Footer -->
 
-  <!-- Core JS (放在页面底部提高性能) -->
+  <!-- Core JS -->
   <script src="static/js/bootstrap.bundle.min.js"></script>
-  <script src="static/js/js-yaml.min.js"></script>
   <script src="static/js/scripts.js"></script>
 </body>
 
